@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Amethyst Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background: #4B0082;
+            color: #fff;
+            padding: 1em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1.5em;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: text-decoration 0.2s;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            flex: 1;
+            padding: 2em;
+        }
+        footer {
+            background: #1f1f1f;
+            color: #a0a0a0;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .btn-group {
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background: #4B0082;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .button-sec {
+            background: #fff;
+            color: #4B0082;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Amethyst</div>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="home-banner">
+            <div>
+            <img src="Asets/14011070-runtimescreenshot_lrg(1).png" alt="Banner Image" class="fixed-image">  
+            </div>
+            <h1>Легендарные сервера Mineсraft с модами</h1>
+            <text>Откройте для себя бесконечные возможности<br>
+                в мире модов на нашем Minecraft проекте!</text>
+            <div class="btn-group">
+                <a href="/play" class="button">Начать играть</a>
+                <a href="/launcher" class="button button-sec">Скачать лаунчер</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Amethyst. Все права защищены.
+    </footer>
+</body>
+</html>
