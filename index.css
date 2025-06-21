@@ -1,0 +1,33 @@
+body{
+    background: #363636;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.fixed-image {         /* остаётся в одном месте экрана */
+  width: 1370px;
+  width: var(--block);
+  margin: 0px;
+  height: 700px;
+  left: 0px;              /* можно задать позицию */
+  top: 0px;
+  z-index: 9999;           /* чтобы не перекрывалось */
+  image-rendering: pixelated; /* если нужно "чистое" изображение */
+}
+.block-home-banner{
+        display: flex;
+        align-items: center;
+        width: 40%;
+        height: calc(100vh - 6.3158rem);
+        background-image: url('https://cristalix.gg/content/bg/citycat.png');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .home-banner{
+        display: block;
+        width: var(--block);
+        margin: auto;
+    }
